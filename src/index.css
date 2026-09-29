@@ -1,0 +1,13 @@
+@import "./styles/fonts.css";
+@import "tailwindcss";
+@import "./styles/theme.css";
+
+@layer base {
+  body { font-family: "Inter", sans-serif; background: var(--background); color: var(--foreground); }
+  button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+  button:not(:disabled), select { cursor: pointer; }
+  button, a, input, select, textarea, summary { outline-offset: 4px; }
+  :focus-visible { outline: 2px solid var(--primary); }
+  button:disabled { cursor: not-allowed; }
+  ::selection { background: #dbeafe; }
+}
